@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{ int i,j,k;
+  char a,b,c;
+  a="c";
+b="d";
+c="e";
+printf("%d %d %d",a,b,c);
+}

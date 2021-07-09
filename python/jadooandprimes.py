@@ -1,0 +1,21 @@
+def sump(n): 
+	pr= [True] * (n + 1)
+        pr[1]=False
+	p = 2
+	while p * p <= n: 
+		if pr[p] == True: 
+			i = p * 2
+			while i <= n: 
+				pr[i] = False
+				i += p 
+		p += 1	 
+	sum = 0
+	for i in range (2, n + 1): 
+		if pr[i]: 
+			sum += i 
+	return sum
+n=int(input())
+for i in range(n):
+   k=int(input())
+   print(sump(k))
+
